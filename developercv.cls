@@ -1,3 +1,4 @@
+%! suppress = MissingImport
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Developer CV
 % LaTeX Class
@@ -34,19 +35,19 @@
 
 \setlength{\parindent}{0mm} % Suppress paragraph indentation
 
-\usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
+\RequirePackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
 
 \newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
 
 \pagestyle{empty} % No headers or footers
 
-\usepackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
+\RequirePackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
 
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT
 %----------------------------------------------------------------------------------------
 
-\usepackage{geometry} % Required for adjusting page dimensions and margins
+\RequirePackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
 	paper=a4paper, % Paper size, change to letterpaper for US letter size
@@ -64,21 +65,22 @@
 %	FONTS
 %----------------------------------------------------------------------------------------
 
-\usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
+\RequirePackage[utf8]{inputenc} % Required for inputting international characters
+\RequirePackage[T1]{fontenc} % Output font encoding for international characters
 
-\usepackage[default]{raleway}
-%\usepackage[defaultsans]{droidsans}
-%\usepackage{cmbright}
-%\usepackage{fetamont}
-%\usepackage[default]{gillius}
-%\usepackage{roboto}
+\RequirePackage[default]{raleway}
+%\RequirePackage[defaultsans]{droidsans}
+%\RequirePackage{cmbright}
+%\RequirePackage{fetamont}
+%\RequirePackage[default]{gillius}
+%\RequirePackage{roboto}
+\RequirePackage{enumitem}
 
 \renewcommand*\familydefault{\sfdefault} % Force the sans-serif version of any font used
 
 %------------------------------------------------
 
-\usepackage{fontawesome} % Required for FontAwesome icons
+\RequirePackage{fontawesome} % Required for FontAwesome icons
 
 % Command to output an icon in a black square box with text to the right
 \newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
@@ -91,7 +93,7 @@
 %	GRAPHICS DEFINITIONS
 %---------------------------------------------------------------------------------------- 
 
-\usepackage{tikz} % Required for creating the plots
+\RequirePackage{tikz} % Required for creating the plots
 \usetikzlibrary{shapes, backgrounds}
 \tikzset{x=1cm, y=1cm} % Default tikz units
 
@@ -178,7 +180,7 @@
 %	ENTRY LIST
 %----------------------------------------------------------------------------------------
 
-\usepackage{longtable} % Required for tables that span multiple pages
+\RequirePackage{longtable} % Required for tables that span multiple pages
 \setlength{\LTpre}{0pt} % Remove default whitespace before longtable
 \setlength{\LTpost}{0pt} % Remove default whitespace after longtable
 
