@@ -1,0 +1,19 @@
+ At octomind, AI-assisted development became essential during our recent pivot. With a very small team and looming end of the runway, we leaned heavily on AI coding tools, Claude Code, Codex to ship fast, and it worked: we delivered
+ features at a pace that would have been impossible otherwise.
+
+But I also learned where the hard parts are. When everyone on the team is producing thousands of lines of code per day with AI assistance, the bottleneck shifts downstream. Code production becomes cheap, but review and integration
+become the constraint. If you don't address that, you just accumulate debt faster.
+
+A few specific lessons:
+
+First, automated tests and CI pipelines become even more non-negotiable than before. When code volume goes up that dramatically, manual verification can't keep up. We invested heavily in test coverage and automated quality gates so that AI-generated
+code had to pass the same bar as human-written code before it could merge.
+
+Second, we started using AI for code review as well, not to replace human reviewers but to handle the first pass: catching style issues, spotting obvious bugs, verifying test coverage. This kept the review queue from becoming the
+new bottleneck.
+
+Third, maintaining a shared mental model of the codebase is much harder when the volume of changes is this high. We addressed this through architectural decision records, clear module boundaries, and frequent sync sessions, but it
+remains an ongoing challenge. The code is easier to write than to understand after the fact, and that asymmetry requires deliberate discipline.
+
+The key insight: AI tools multiply your output, but they also multiply the importance of everything around the code, tests, reviews, architecture, communication. Teams that only use AI to write code faster without strengthening
+those surrounding practices will end up worse off, not better.

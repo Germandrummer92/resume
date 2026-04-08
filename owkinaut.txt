@@ -1,0 +1,7 @@
+Because I've done the "build from zero with a small team" thing twice now, and I know what it takes to ship fast without cutting corners. At octomind I was the first engineer. I built the product, hired the team, set up the
+practices, and shipped agentic AI systems to production every single day. I thrive in environments where I can affect meaningful change with real ownership and I like to get my hands dirty throughout the entire product.
+
+I'd be a great Owkinaut because I care about both the craft and the cause. I write code test-first, review thoroughly, and push for engineering practices that let teams move fast with confidence. But I also want the thing I'm
+building to matter. Testing software was fun. Helping researchers fight disease is something I'd be super proud to tell people about at dinner.
+
+And if the octoneers-to-Owkinauts transformation isn't proof of cultural fit, I don't know what is

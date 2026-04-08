@@ -1,0 +1,12 @@
+My most significant experience is building the agent orchestration platform at octomind, where I was the founding engineer. We run highly parallel LLM-based agents on Kubernetes that discover and (non-agentic) execute end-to-end tests for our
+customers. Each agent session involves multiple concurrent tool-calling workflows (browser automation, assertions, code generation) that need to coordinate reliably under unpredictable LLM latency and non-deterministic outputs.
+
+The biggest technical challenge was, as expected, evaluation and reliability. LLM-based systems don't fail the way traditional software does: they degrade subtly due to input quality or model uncertainty. A model update or prompt change could cause regressions that unit tests would
+never catch. I addressed this by building an internal agentic benchmark suite that runs on every PR against a set of known target applications, comparing agent behavior before and after the change. This gave us a concrete
+regression signal for what is inherently a fuzzy system, and let us ship 20+ deployments per day with a change failure rate under 5%.
+
+At understand.ai, I faced a different scaling challenge: an annotation platform serving thousands of concurrent annotators across terabyte-scale 2D/3D datasets. The orchestration engine had to coordinate highly parallel workflows
+mixing automatic ML inference steps with manual human annotation, routing work correctly and recovering gracefully when annotators paused their work or ML jobs failed. I also led a cross-functional initiative to optimize the Python data
+pipelines that fed the platform, cutting import/export latency by more than half, which directly improved both developer velocity and customer delivery times.
+
+In both cases the pattern was similar: design for parallel execution, instrument everything where possible, and build feedback loops that surface problems before they reach production.

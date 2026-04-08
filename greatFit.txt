@@ -1,0 +1,10 @@
+I've spent the last two years building exactly what this role describes: production agentic AI systems with LLM orchestration, tool-calling, and evaluation frameworks.
+At octomind I architected these systems from scratch, scaled them on Kubernetes, and built the engineering team and practices around them.
+
+Before that, at understand.ai, I spent four years building scalable Python backends and orchestration engines for parallel ML workflows across terabyte-scale datasets.
+That combination, deep Python infrastructure experience plus hands-on LLM systems work, maps directly to what Owkin needs.
+
+Beyond the technical fit, I bring the leadership side: I've grown teams, established engineering culture (TDD, CI/CD, on-call, ADRs), and worked as part of a Product Trio alongside PM and UX.
+I know how to make technical decisions that serve both the product and the people using it.
+
+What makes Owkin different for me is the mission. I've built AI that tests software and labels driving data. Applying that same skillset to help biomedical researchers fight disease is the kind of impact I want my work to have.
